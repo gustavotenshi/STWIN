@@ -1,284 +1,284 @@
-# STWIN
+﻿# STWIN
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22676355-blue)](https://doi.org/10.5281/zenodo.22676355)
-[![Zenodo](https://img.shields.io/badge/Zenodo-Publicação_oficial-blue)](https://zenodo.org/records/22676356)
-[![Versão do manuscrito](https://img.shields.io/badge/Manuscrito-v1.0-green)](STWIN_Paper_EN.md)
-[![Licença: CC BY 4.0](https://img.shields.io/badge/Licença-CC_BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
+[![Zenodo](https://img.shields.io/badge/Zenodo-Official_publication-blue)](https://zenodo.org/records/22676356)
+[![Manuscript version](https://img.shields.io/badge/Manuscript-v1.0-green)](STWIN_Paper_EN.md)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
 
 **Subluminally Transported Wormhole Infrastructure Networks**
 
-Uma proposta conceitual de infraestrutura interestelar baseada no transporte subluminal de bocas de buracos de minhoca atravessáveis.
+A conceptual framework for interstellar infrastructure based on the subluminal transport of traversable wormhole mouths.
 
-O STWIN explora uma pergunta: **se buracos de minhoca atravessáveis e controláveis forem fisicamente possíveis, como poderiam funcionar como uma rede permanente de comunicação e transporte entre sistemas estelares?**
+STWIN explores a question: **if controllable traversable wormholes are physically possible, how could they function as a persistent communication and transport network between stellar systems?**
 
-A ideia central é separar o **tempo necessário para instalar uma conexão** da **latência de uso depois da instalação**. Uma sonda faria a primeira viagem a uma velocidade inferior à da luz, levando uma das bocas de um buraco de minhoca. Se a conexão sobrevivesse ao percurso e permanecesse utilizável, as interações posteriores poderiam percorrer o caminho interno dessa conexão.
+The central idea separates **the time required to install a connection** from **its operational latency after installation**. A probe would make the first journey at a speed below that of light, carrying one wormhole mouth. If the connection survived the journey and remained usable, subsequent interactions could travel through its internal path.
 
-> **Status:** pesquisa conceitual e arquitetura teórica condicional. O artigo não apresenta uma tecnologia demonstrada nem um projeto de engenharia realizável com a física atual. A possibilidade física dos componentes necessários é uma hipótese fundamental do modelo.
+> **Status:** conceptual research and a conditional theoretical architecture. The paper does not present a demonstrated technology or an engineering design realizable under current physics. The physical feasibility of the required components is a foundational assumption of the model.
 
-**Publicação acadêmica oficial:** [acesse o registro no Zenodo](https://zenodo.org/records/22676356). **DOI:** [10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355).
+**Official academic publication:** [view the Zenodo record](https://zenodo.org/records/22676356). **DOI:** [10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355).
 
-Para leitura no repositório, abra o [artigo completo em inglês](STWIN_Paper_EN.md) ou baixe a [versão em Word](STWIN_Paper_EN.docx). O manuscrito se identifica como **versão 1.0 — setembro de 2026**.
+To read the manuscript in this repository, open the [full English paper](STWIN_Paper_EN.md) or download the [Word version](STWIN_Paper_EN.docx). The manuscript identifies itself as **version 1.0 — September 2026**.
 
-**Acompanhe a pesquisa:** consulte o [roadmap mestre em português](STWIN_Master_Research_Roadmap_PT-BR.docx) e a [primeira conclusão temporal — NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>). A próxima etapa definida é **SRP-2.1 — modelo causal de duas bocas**.
+**Follow the research:** see the [master research roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) and the [first temporal conclusion — NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>), both in Portuguese. The next defined step is **SRP-2.1 — Two-Mouth Causal Model**.
 
-## Sumário
+## Contents
 
-- [Sobre o projeto](#sobre-o-projeto)
-- [Conteúdo do repositório](#conteúdo-do-repositório)
-- [Estado atual da pesquisa](#estado-atual-da-pesquisa)
-- [Como acessar](#como-acessar)
-- [Como a arquitetura funciona](#como-a-arquitetura-funciona)
-- [Conceitos principais](#conceitos-principais)
-- [Exemplo: Proxima Centauri](#exemplo-proxima-centauri)
-- [Níveis de capacidade](#níveis-de-capacidade)
-- [Hipóteses e limitações](#hipóteses-e-limitações)
-- [Guia de leitura](#guia-de-leitura)
-- [Agenda de pesquisa](#agenda-de-pesquisa)
-- [Como contribuir](#como-contribuir)
-- [Publicação e versionamento](#publicação-e-versionamento)
-- [Referências e citação](#referências-e-citação)
-- [Licença](#licença)
+- [About the project](#about-the-project)
+- [Repository contents](#repository-contents)
+- [Current research status](#current-research-status)
+- [Getting started](#getting-started)
+- [How the architecture works](#how-the-architecture-works)
+- [Key concepts](#key-concepts)
+- [Example: Proxima Centauri](#example-proxima-centauri)
+- [Capability levels](#capability-levels)
+- [Assumptions and limitations](#assumptions-and-limitations)
+- [Reading guide](#reading-guide)
+- [Research agenda](#research-agenda)
+- [Contributing](#contributing)
+- [Publication and versioning](#publication-and-versioning)
+- [References and citation](#references-and-citation)
+- [License](#license)
 
-## Sobre o projeto
+## About the project
 
-O STWIN trata conexões hipotéticas entre sistemas estelares como infraestrutura: estrelas são nós, conexões atravessáveis são arestas e sondas instalam novos pontos da rede.
+STWIN treats hypothetical connections between stellar systems as infrastructure: stellar systems are nodes, traversable connections are edges, and probes install new network endpoints.
 
-A contribuição proposta pelo artigo é **arquitetural**. O transporte de uma boca de buraco de minhoca já aparece na literatura discutida no manuscrito; o STWIN organiza esse cenário em termos de implantação, latência, capacidade, redundância, segurança causal e expansão de redes.
+The paper's proposed contribution is **architectural**. Transporting a wormhole mouth already appears in the literature discussed in the manuscript; STWIN organizes that scenario around deployment, latency, capacity, redundancy, causal safety, and network expansion.
 
-O material se destina a leitores interessados em relatividade, gravitação, comunicação interestelar e teoria de redes. Familiaridade com relatividade especial e geral ajuda na leitura das seções técnicas, mas a introdução apresenta a proposta em linguagem conceitual.
+The material is intended for readers interested in relativity, gravitation, interstellar communication, and network theory. Familiarity with special and general relativity helps with the technical sections, while the introduction presents the proposal conceptually.
 
-## Conteúdo do repositório
+## Repository contents
 
-| Arquivo | Conteúdo |
+| File | Contents |
 | --- | --- |
-| [README.md](README.md) | Apresentação em português e orientação para leitura e contribuição. |
-| [STWIN_Paper_EN.md](STWIN_Paper_EN.md) | Manuscrito em inglês, com 21 seções, equações, estudo de caso e referências. |
-| [STWIN_Paper_EN.docx](STWIN_Paper_EN.docx) | Versão do artigo em formato Word. |
-| [Roadmap mestre da pesquisa](STWIN_Master_Research_Roadmap_PT-BR.docx) | Programa em português, versão 1.0, com 30 domínios de pesquisa (SRP-0 a SRP-29), perguntas, dependências e estados de avanço. |
-| [Conclusão temporal NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) | Nota em português sobre Network Epoch Reset, STWIN Network Time e o princípio de operação orientada para o futuro. Identificada no texto como STWIN-C3. |
+| [README.md](README.md) | English project overview, reading guide, and contribution instructions. |
+| [STWIN_Paper_EN.md](STWIN_Paper_EN.md) | English manuscript with 21 sections, equations, a case study, and references. |
+| [STWIN_Paper_EN.docx](STWIN_Paper_EN.docx) | Word version of the paper. |
+| [Master research roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) | Portuguese research program, version 1.0, covering 30 research domains (SRP-0 through SRP-29), questions, dependencies, and progress states. |
+| [NER/SNT temporal conclusion](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) | Portuguese note on Network Epoch Reset, STWIN Network Time, and the Forward-Time Operational Principle. Identified in the text as STWIN-C3. |
 
-O repositório é documental. Atualmente não contém software, simuladores, dados experimentais, dependências de execução ou uma suíte de testes automatizados.
+This is a documentation repository. It currently contains no software, simulators, experimental datasets, runtime dependencies, or automated test suite.
 
-## Estado atual da pesquisa
+## Current research status
 
-O [roadmap mestre](STWIN_Master_Research_Roadmap_PT-BR.docx) registra o seguinte estágio do programa:
+The [master roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) records the following state of the program:
 
-| Frente | Estado |
+| Research item | Status |
 | --- | --- |
-| Artigo conceitual STWIN v1 | Publicado. |
-| Questão inicial sobre diferenças de tempo próprio | Concluída no nível conceitual. |
-| Network Epoch Reset e Forward-Time Operational Principle | Adotados conceitualmente. |
-| STWIN Network Time | Arquitetura selecionada; formalização matemática pendente. |
-| Realização física de NER/SNT | Em aberto. |
-| SRP-2.1 — modelo causal de duas bocas | Próxima etapa definida. |
-| Dinâmica de bocas móveis, energia, capacidade e redes | Investigações futuras. |
+| STWIN v1 conceptual paper | Published. |
+| Initial question about proper-time differences | Concluded at the conceptual level. |
+| Network Epoch Reset and Forward-Time Operational Principle | Conceptually adopted. |
+| STWIN Network Time | Architecture selected; mathematical formalization pending. |
+| Physical realization of NER/SNT | Open. |
+| SRP-2.1 — Two-Mouth Causal Model | Next defined step. |
+| Moving-mouth dynamics, energy, capacity, and networks | Future investigations. |
 
-### Primeira conclusão temporal
+### First temporal conclusion
 
-A [nota NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) adota uma arquitetura em que cada boca conserva sua história relativística e seu tempo próprio. Não se exige que os tempos próprios acumulados pelas duas extremidades sejam iguais.
+The [NER/SNT note](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) adopts an architecture in which each mouth retains its relativistic history and proper time. The two endpoints are not required to accumulate equal amounts of proper time.
 
-Na ativação, o **Network Epoch Reset (NER)** estabelece uma referência lógica de operação. O **STWIN Network Time (SNT)** organiza os eventos da infraestrutura sem substituir os relógios locais. O **Forward-Time Operational Principle** exige, para cada travessia admissível:
+At activation, **Network Epoch Reset (NER)** establishes a logical operational reference. **STWIN Network Time (SNT)** organizes infrastructure events without replacing local clocks. The **Forward-Time Operational Principle** requires, for each admissible traversal:
 
 ```text
-T_out = T_in + δ_W, com δ_W > 0
+T_out = T_in + δ_W, with δ_W > 0
 ```
 
-A nota distingue **STWIN-COM**, voltado à comunicação, de **STWIN-TRANS**, voltado ao transporte de matéria. Segundos ou menos são uma meta arquitetural para comunicação; transporte poderia tolerar latências positivas maiores. Esses valores não são capacidades demonstradas.
+The note distinguishes **STWIN-COM**, for communication, from **STWIN-TRANS**, for matter transport. Seconds or less are an architectural target for communication; transport could tolerate larger positive latencies. These values are not demonstrated capabilities.
 
-**Alcance da conclusão:** NER/SNT define uma camada lógica e um requisito operacional. A correspondência dessa ordenação com a estrutura causal física ainda precisa ser demonstrada. Redefinir relógios não altera a geometria nem elimina, por si só, curvas temporais fechadas. A hipótese de compensação geométrica ativa (*Active Wormhole Compensation*) também permanece em aberto.
+**Scope of the conclusion:** NER/SNT defines a logical layer and an operational requirement. The correspondence between this ordering and physical causal structure still needs to be demonstrated. Redefining clocks does not change the geometry or, by itself, eliminate closed timelike curves. The hypothesis of *Active Wormhole Compensation* also remains open.
 
-O arquivo dessa conclusão tem o prefixo **STWIN-T1**, enquanto seu título e o roadmap usam **STWIN-C3**. Ambos se referem à nota vinculada acima.
+The conclusion's filename uses the prefix **STWIN-T1**, while its title and the roadmap use **STWIN-C3**. Both refer to the note linked above.
 
-### Próxima pergunta — SRP-2.1
+### Next question — SRP-2.1
 
-Com uma boca na Terra e outra em Proxima Centauri, qual condição física garante que uma travessia com `T_out > T_in` no SNT também seja orientada para o futuro na estrutura causal do espaço-tempo?
+With one mouth on Earth and another at Proxima Centauri, what physical condition guarantees that a traversal satisfying `T_out > T_in` in SNT is also future-directed in the causal structure of spacetime?
 
-O escopo definido no roadmap é **duas bocas, uma mensagem e estrutura causal**. A etapa deverá modelar as trajetórias das bocas, os eventos de entrada e saída e a relação entre SNT e causalidade física. Redes com múltiplos nós e requisitos avançados de energia, transporte e segurança ficam para etapas posteriores.
+The roadmap defines the scope as **two mouths, one message, and causal structure**. This step should model the mouth worldlines, entry and exit events, and the relationship between SNT and physical causality. Multi-node networks and advanced energy, transport, and security requirements belong to later stages.
 
-## Como acessar
+## Getting started
 
-### Leitura pelo GitHub
+### Read on GitHub
 
-Abra o [manuscrito em Markdown](STWIN_Paper_EN.md). Para ler ou editar em um processador de texto, baixe o [arquivo `.docx`](STWIN_Paper_EN.docx) e abra-o em um aplicativo compatível.
+Open the [Markdown manuscript](STWIN_Paper_EN.md). To read or edit it in a word processor, download the [`.docx` file](STWIN_Paper_EN.docx) and open it in a compatible application.
 
-### Cópia local
+### Get a local copy
 
-Com o Git instalado:
+With Git installed:
 
 ```sh
 git clone https://github.com/gustavotenshi/STWIN.git
 cd STWIN
 ```
 
-Também é possível baixar o repositório pelo menu **Code → Download ZIP** no GitHub, sem instalar o Git.
+You can also download the repository through **Code → Download ZIP** on GitHub without installing Git.
 
-Abra `STWIN_Paper_EN.md` em um editor de texto ou visualizador de Markdown. As equações do manuscrito usam notação LaTeX; sua exibição depende do suporte do visualizador. Nenhuma instalação de pacotes, compilação ou configuração de variáveis de ambiente é necessária para consultar os documentos.
+Open `STWIN_Paper_EN.md` in a text editor or Markdown viewer. The manuscript's equations use LaTeX notation; rendering depends on your viewer's support. Reading the documents requires no package installation, build process, or environment variable configuration.
 
-## Como a arquitetura funciona
+## How the architecture works
 
-1. **Preparação:** duas bocas conectadas, `W_A` e `W_B`, começam próximas no sistema de origem.
-2. **Implantação:** `W_A` permanece na origem e uma sonda transporta `W_B` até outro sistema, com velocidade `v < c`.
-3. **Instalação no destino:** a sonda desacelera e posiciona a boca remota em uma configuração operacional estável.
-4. **Operação:** se a geometria permanecer atravessável e causalmente admissível, sinais — e, sob hipóteses adicionais, matéria — passam pela conexão.
-5. **Expansão:** nós com capacidade industrial e de provisionamento de novas bocas poderiam enviar outras sondas e ampliar a rede.
+1. **Preparation:** two connected mouths, `W_A` and `W_B`, start near each other in the origin system.
+2. **Deployment:** `W_A` remains at the origin while a probe carries `W_B` to another system at a speed `v < c`.
+3. **Destination installation:** the probe decelerates and places the remote mouth in a stable operational configuration.
+4. **Operation:** if the geometry remains traversable and causally admissible, signals — and, under additional assumptions, matter — pass through the connection.
+5. **Expansion:** nodes with industrial capacity and the ability to provision new mouths could send further probes and extend the network.
 
-O manuscrito também discute uma variante de **geração remota**, na qual a sonda criaria uma boca no destino. Essa variante exige hipóteses adicionais e não deve ser confundida com a arquitetura básica de transporte de uma boca já conectada.
+The manuscript also discusses a **remote-generation** variant in which the probe would create a mouth at the destination. This variant requires additional assumptions and should be distinguished from the baseline architecture of transporting an already connected mouth.
 
-## Conceitos principais
+## Key concepts
 
-| Conceito | Significado no STWIN |
+| Concept | Meaning in STWIN |
 | --- | --- |
-| Custo causal de instalação | Tempo necessário para levar fisicamente um novo ponto de conexão ao destino. |
-| Amortização da distância | Reutilização da conexão instalada em sucessivas comunicações ou travessias. |
-| Distância topológica de rede | Custo de percorrer conexões da rede, que pode diferir do percurso pelo espaço exterior. |
-| Implantação com segurança cronológica | Restrições sobre trajetórias e conexões para evitar curvas temporais fechadas. |
-| Expansão recursiva | Novos nós provisionam e enviam missões para instalar outras conexões. |
+| Causal installation cost | Time required to physically deliver a new endpoint to its destination. |
+| Distance amortization | Reusing an installed connection for successive communications or traversals. |
+| Topological network distance | Cost of traversing network connections, which may differ from the route through exterior space. |
+| Chronology-safe deployment | Constraints on trajectories and connections intended to avoid closed timelike curves. |
+| Recursive expansion | New nodes provision and launch missions to install further connections. |
 
-As relações simplificadas usadas no artigo são:
+The simplified relationships used in the paper are:
 
 ```text
-Tempo de implantação:             T_deploy ≈ D / v
-Tempo de propagação da luz:        T_light  = D / c
-Condição de baixa latência:        τ_W ≪ D / c
+Deployment time:          T_deploy ≈ D / v
+Light propagation time:   T_light  = D / c
+Low-latency condition:    τ_W ≪ D / c
 ```
 
-Aqui, `D` é a distância exterior entre os sistemas, `v` é a velocidade de cruzeiro da sonda, `c` é a velocidade da luz e `τ_W` representa a latência efetiva de travessia da conexão. A estimativa de implantação desconsidera aceleração e frenagem.
+Here, `D` is the exterior distance between systems, `v` is the probe's cruise speed, `c` is the speed of light, and `τ_W` represents the connection's effective traversal latency. The deployment estimate neglects acceleration and braking.
 
-**Latência e capacidade são grandezas distintas:** mesmo uma conexão hipotética de baixa latência poderia ter limites severos de largura de banda, energia ou fluxo de matéria.
+**Latency and capacity are distinct quantities:** even a hypothetical low-latency connection could have severe limits on bandwidth, energy, or matter flow.
 
-## Exemplo: Proxima Centauri
+## Example: Proxima Centauri
 
-O estudo de caso do manuscrito adota uma distância aproximada de **4,24 anos-luz**. Com velocidade de cruzeiro constante, os tempos de implantação no referencial da origem seriam:
+The manuscript's case study assumes an approximate distance of **4.24 light-years**. At constant cruise speed, deployment times in the origin frame would be:
 
-| Velocidade de cruzeiro | Tempo aproximado de implantação |
+| Cruise speed | Approximate deployment time |
 | --- | ---: |
-| `0,01c` | 424 anos |
-| `0,10c` | 42,4 anos |
-| `0,20c` | 21,2 anos |
-| `0,50c` | 8,48 anos |
+| `0.01c` | 424 years |
+| `0.10c` | 42.4 years |
+| `0.20c` | 21.2 years |
+| `0.50c` | 8.48 years |
 
-Nesse modelo, um sinal luminoso pelo espaço exterior continuaria levando aproximadamente **4,24 anos em um sentido**, ou **8,48 anos para uma troca de pergunta e resposta imediata**. A latência de uma conexão STWIN dependeria da geometria hipotética do buraco de minhoca; o projeto não estabelece um valor fisicamente realizável.
+In this model, a light signal through exterior space would still take approximately **4.24 years one way**, or **8.48 years for a question and an immediate reply to return**. A STWIN connection's latency would depend on the hypothetical wormhole geometry; the project does not establish a physically realizable value.
 
-Esses números são estimativas ilustrativas reproduzidas do artigo. Não incluem aceleração, desaceleração ou os requisitos de estabilidade da boca transportada. O tempo próprio medido pela sonda também difere do tempo no referencial de origem em velocidades relativísticas.
+These figures are illustrative estimates reproduced from the paper. They exclude acceleration, deceleration, and the transported mouth's stability requirements. At relativistic speeds, the probe's proper time also differs from the elapsed time in the origin frame.
 
-## Níveis de capacidade
+## Capability levels
 
-O artigo distingue cinco capacidades, cada uma com requisitos próprios:
+The paper distinguishes five capabilities, each with its own requirements:
 
-| Nível | Capacidade hipotética |
+| Level | Hypothetical capability |
 | --- | --- |
-| I | Transmissão de sinais clássicos. |
-| II | Transferência de estados quânticos com preservação de coerência. |
-| III | Passagem de matéria microscópica, como átomos e moléculas. |
-| IV | Transporte de cargas macroscópicas, equipamentos e robôs. |
-| V | Transporte biológico ou tripulado em condições toleráveis. |
+| I | Classical signal transmission. |
+| II | Quantum-state transfer with preservation of coherence. |
+| III | Microscopic matter transit, such as atoms and molecules. |
+| IV | Macroscopic cargo, equipment, and robot transport. |
+| V | Biological or crewed transport under tolerable conditions. |
 
-A viabilidade de um nível não demonstra a dos seguintes. Uma conexão capaz de transmitir sinais pode ser inadequada para transportar matéria ou organismos.
+The feasibility of one level does not demonstrate the feasibility of the next. A connection capable of transmitting signals may be unsuitable for transporting matter or living organisms.
 
-## Hipóteses e limitações
+## Assumptions and limitations
 
-As conclusões do STWIN dependem de que seja possível:
+STWIN's conclusions depend on the ability to:
 
-- Criar ou obter um buraco de minhoca macroscópico atravessável.
-- Acomodar e transportar uma de suas bocas em uma sonda.
-- Preservar a conexão durante aceleração, cruzeiro, frenagem e grande separação espacial.
-- Controlar a energia de sustentação e a reação da geometria à passagem de sinais ou matéria.
-- Manter uma configuração globalmente consistente com as restrições de causalidade.
-- Obter taxas de transmissão ou transporte úteis.
+- Create or obtain a macroscopic traversable wormhole.
+- Accommodate and transport one of its mouths in a probe.
+- Preserve the connection during acceleration, cruise, braking, and large spatial separation.
+- Control the supporting energy and the geometry's backreaction to signals or matter.
+- Maintain a configuration globally consistent with causal constraints.
+- Achieve useful transmission or transport rates.
 
-O manuscrito identifica como obstáculos centrais a energia negativa e suas restrições quânticas, a estabilidade da garganta, a defasagem temporal entre bocas, a possível formação de curvas temporais fechadas e os limites impostos pela reação gravitacional ao tráfego.
+The manuscript identifies negative energy and its quantum constraints, throat stability, temporal offsets between mouths, possible closed timelike curves, and gravitational backreaction from traffic as central obstacles.
 
-Na formulação do artigo, **emaranhamento quântico comum não é um canal controlável de comunicação superluminal**. A discussão de ER=EPR e de modelos teóricos de atravessabilidade não fornece um método de construção de conexões macroscópicas entre estrelas.
+In the paper's formulation, **ordinary quantum entanglement is not a controllable faster-than-light communication channel**. Its discussion of ER=EPR and theoretical traversability models does not provide a method for building macroscopic connections between stars.
 
-A primeira implantação continua exigindo uma viagem subluminal no cenário básico. A baixa latência posterior é uma consequência condicional da conexão postulada, sem demonstração experimental no projeto.
+The first deployment still requires a subluminal journey in the baseline scenario. Subsequent low latency is a conditional consequence of the postulated connection, with no experimental demonstration in the project.
 
-## Guia de leitura
+## Reading guide
 
-Para acompanhar o programa, a sequência sugerida é: **artigo conceitual → conclusão temporal NER/SNT → roadmap mestre**, com atenção à próxima pergunta SRP-2.1. Os três documentos estão vinculados em [Conteúdo do repositório](#conteúdo-do-repositório).
+To follow the program, the suggested sequence is **conceptual paper → NER/SNT temporal conclusion → master roadmap**, focusing on the next question, SRP-2.1. All three documents are linked under [Repository contents](#repository-contents). The paper is in English; the conclusion and roadmap are in Portuguese.
 
-As seções abaixo pertencem ao [manuscrito completo](STWIN_Paper_EN.md):
+The sections below belong to the [full manuscript](STWIN_Paper_EN.md):
 
-| Interesse | Seções |
+| Interest | Sections |
 | --- | --- |
-| Entender a proposta e seu escopo | Resumo e 1–3: introdução, hipóteses e arquitetura. |
-| Acompanhar os cálculos ilustrativos | 4–5: amortização da distância e caso Proxima Centauri. |
-| Examinar os obstáculos físicos | 6–9: cronologia, energia negativa, emaranhamento e capacidade. |
-| Entender requisitos de transporte e implantação | 10–11: níveis de capacidade e requisitos da sonda. |
-| Explorar redes e expansão | 12–15: topologias, falhas, expansão recursiva e primeira travessia. |
-| Examinar implicações operacionais | 16–17: translocação, identidade, segurança e governança. |
-| Avaliar questões em aberto | 18–19: falsificabilidade e marcos de pesquisa. |
-| Ler a síntese conceitual | 20–21: discussão e conclusão. |
+| Understand the proposal and its scope | Abstract and 1–3: introduction, assumptions, and architecture. |
+| Follow the illustrative calculations | 4–5: distance amortization and the Proxima Centauri case study. |
+| Examine the physical obstacles | 6–9: chronology, negative energy, entanglement, and capacity. |
+| Understand transport and deployment requirements | 10–11: capability levels and probe requirements. |
+| Explore networks and expansion | 12–15: topologies, failures, recursive expansion, and the first crossing. |
+| Examine operational implications | 16–17: translocation, identity, security, and governance. |
+| Assess open questions | 18–19: falsifiability and research milestones. |
+| Read the conceptual synthesis | 20–21: discussion and conclusion. |
 
-## Agenda de pesquisa
+## Research agenda
 
-O [roadmap mestre](STWIN_Master_Research_Roadmap_PT-BR.docx) desdobra a agenda do artigo em 30 domínios. A tabela resume seu escopo; os estados de cada pergunta e suas dependências estão no documento completo.
+The [master roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) develops the paper's agenda into 30 domains. The table summarizes their scope; individual question statuses and dependencies are recorded in the full document.
 
-| Domínios | Escopo |
+| Domains | Scope |
 | --- | --- |
-| SRP-0–2 | Fundamentos, hipóteses mínimas, arquitetura temporal, causalidade e cronologia. |
-| SRP-3–4 | Geometria do buraco de minhoca e dinâmica de uma boca em movimento. |
-| SRP-5–6 | Missões de implantação, trajetórias, massa efetiva e energia de propulsão. |
-| SRP-7–8 | Energia exótica, tensor energia-momento, estabilidade e reação da geometria ao tráfego. |
-| SRP-9–10 | Comunicação, capacidade de canal e informação quântica. |
-| SRP-11–13 | Teoria de redes, grafos causais e tempo distribuído. |
-| SRP-14–16 | Controle autônomo, IA, prevenção de falhas e proteção contra ataques. |
-| SRP-17–18 | Transporte de matéria e requisitos adicionais para transporte biológico. |
-| SRP-19–20 | Expansão recursiva e consequências para uma civilização conectada. |
-| SRP-21–22 | Condições que inviabilizam o modelo e arquiteturas alternativas. |
-| SRP-23–27 | Simulações, formalização matemática, falsificabilidade, observação e experimentos análogos. |
-| SRP-28–29 | Publicações incrementais, registros de pesquisa, hipóteses, decisões e versionamento. |
+| SRP-0–2 | Foundations, minimal assumptions, temporal architecture, causality, and chronology. |
+| SRP-3–4 | Wormhole geometry and moving-mouth dynamics. |
+| SRP-5–6 | Deployment missions, trajectories, effective mass, and propulsion energy. |
+| SRP-7–8 | Exotic energy, stress-energy, stability, and traffic backreaction. |
+| SRP-9–10 | Communication, channel capacity, and quantum information. |
+| SRP-11–13 | Network theory, causal graphs, and distributed time. |
+| SRP-14–16 | Autonomous control, AI, safety, and security. |
+| SRP-17–18 | Matter transport and additional requirements for biological transport. |
+| SRP-19–20 | Recursive expansion and implications for a connected civilization. |
+| SRP-21–22 | No-go conditions and alternative architectures. |
+| SRP-23–27 | Simulations, mathematical formalization, falsifiability, observation, and experimental analogues. |
+| SRP-28–29 | Incremental publications, research records, assumptions, decisions, and versioning. |
 
-A sequência imediata parte de **SRP-2.1**, segue para diagramas de Minkowski e mapeamentos temporais (**SRP-2.2/2.3**) e então para margens de cronologia e condições de curvas temporais fechadas (**SRP-2.4/2.5**). O próximo alvo de publicação previsto é o **Paper II — arquitetura temporal e causalidade de duas bocas**.
+The immediate sequence starts with **SRP-2.1**, proceeds to Minkowski diagrams and temporal mappings (**SRP-2.2/2.3**), and then addresses chronology margins and closed-timelike-curve conditions (**SRP-2.4/2.5**). The next planned publication target is **Paper II — Temporal Architecture and Two-Mouth Causality**.
 
-O método do programa é trabalhar uma pergunta central por vez, buscar refutações e registrar a conclusão, o grau de confiança, as objeções e as questões abertas. As afirmações devem distinguir física estabelecida, resultados teóricos conhecidos, extrapolações condicionais, hipóteses STWIN e especulação de engenharia.
+The program's method is to address one central question at a time, seek refutations, and record the conclusion, confidence level, objections, and open questions. Claims should distinguish established physics, known theoretical results, conditional extrapolations, STWIN hypotheses, and engineering speculation.
 
-## Como contribuir
+## Contributing
 
-Contribuições úteis incluem correções matemáticas, identificação de hipóteses implícitas, revisão de terminologia, referências relevantes, traduções e melhorias na apresentação do argumento.
+Useful contributions include mathematical corrections, identification of implicit assumptions, terminology review, relevant references, translations, and improvements to the presentation of the argument.
 
-Para propor uma alteração:
+To propose a change:
 
-1. Abra uma issue ou prepare uma pull request com a seção afetada e a mudança proposta.
-2. Explique o problema e apresente a justificativa; para alterações científicas, inclua fontes e explicite as hipóteses adotadas.
-3. Preserve a distinção entre resultados estabelecidos, resultados teóricos de domínio restrito e suposições do STWIN.
-4. Confira equações, unidades, referências, links e renderização do Markdown.
-5. Ao alterar o manuscrito, mantenha as versões `.md` e `.docx` consistentes ou informe na proposta qual delas ainda precisa ser atualizada.
-6. Para avanços de pesquisa, indique o identificador SRP correspondente, as dependências e o que foi concluído ou permanece em aberto. Atualize o roadmap quando houver mudança de estado.
+1. Open an issue or prepare a pull request identifying the affected section and proposed change.
+2. Explain the problem and your reasoning; for scientific changes, include sources and state the assumptions used.
+3. Preserve the distinction between established results, theoretical results with restricted domains, and STWIN assumptions.
+4. Check equations, units, references, links, and Markdown rendering.
+5. When changing the manuscript, keep its `.md` and `.docx` versions consistent or state which version still needs updating.
+6. For research advances, specify the corresponding SRP identifier, dependencies, and what has been concluded or remains open. Update the roadmap when a status changes.
 
-Não há um processo automatizado de sincronização dos documentos ou validação científica neste repositório. A revisão das alterações é documental e conceitual.
+This repository has no automated document synchronization or scientific validation process. Changes undergo documentary and conceptual review.
 
-## Publicação e versionamento
+## Publication and versioning
 
-O projeto utiliza dois espaços complementares:
+The project uses two complementary spaces:
 
-| Espaço | Finalidade |
+| Platform | Purpose |
 | --- | --- |
-| [Zenodo](https://zenodo.org/records/22676356) | Publicação acadêmica arquivada, identificada por DOI e usada como referência para citação. |
-| [GitHub](https://github.com/gustavotenshi/STWIN) | Documentação em evolução, manuscrito em Markdown, histórico de alterações, issues e discussão técnica. Pode também reunir futuras figuras, simulações e cálculos. |
+| [Zenodo](https://zenodo.org/records/22676356) | Archived academic publication, identified by DOI and used as the citation reference. |
+| [GitHub](https://github.com/gustavotenshi/STWIN) | Evolving documentation, Markdown manuscript, change history, issues, and technical discussion. It may also host future figures, simulations, and calculations. |
 
-O roadmap e as notas de conclusão acompanham a evolução da pesquisa no repositório. A presença desses documentos não implica uma nova versão do artigo arquivado; o badge do manuscrito permanece em `v1.0` até uma atualização formal correspondente.
+The roadmap and conclusion notes track research progress in the repository. Their presence does not imply a new version of the archived paper; the manuscript badge remains at `v1.0` until a corresponding formal update.
 
-Para futuras versões do artigo, como `v1.1` ou `v2.0`, o fluxo de publicação proposto é:
+For future paper versions, such as `v1.1` or `v2.0`, the proposed publication workflow is:
 
-1. Atualizar e revisar os arquivos do manuscrito, registrando as mudanças em um changelog.
-2. Criar uma release correspondente no GitHub, com a versão e as notas de alteração.
-3. Publicar a nova versão no Zenodo e registrar seu DOI nas notas da release.
-4. Atualizar os links e o badge de versão deste README para manter a correspondência entre os materiais.
+1. Update and review the manuscript files, recording changes in a changelog.
+2. Create a corresponding GitHub release with the version and release notes.
+3. Publish the new version on Zenodo and record its DOI in the release notes.
+4. Update this README's links and version badge to keep the materials aligned.
 
-No cadastro do Zenodo, o endereço `https://github.com/gustavotenshi/STWIN` deve constar como repositório relacionado. Este README já oferece o caminho do GitHub para a publicação acadêmica.
+The Zenodo metadata should list `https://github.com/gustavotenshi/STWIN` as a related repository. This README already provides the link from GitHub to the academic publication.
 
-## Referências e citação
+## References and citation
 
-A bibliografia está ao final do [artigo em Markdown](STWIN_Paper_EN.md), com trabalhos sobre buracos de minhoca atravessáveis, proteção cronológica, restrições quânticas de energia, ER=EPR e geometrias com múltiplas bocas, além da fonte usada para a distância a Proxima Centauri.
+The bibliography at the end of the [Markdown paper](STWIN_Paper_EN.md) includes works on traversable wormholes, chronology protection, quantum energy constraints, ER=EPR, and multi-mouth geometries, alongside the source used for the distance to Proxima Centauri.
 
-Para citar a publicação acadêmica, consulte os metadados e as opções de exportação de citação no [registro do Zenodo](https://zenodo.org/records/22676356). O DOI informado para o projeto é **[10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355)**.
+To cite the academic publication, consult the metadata and citation export options in the [Zenodo record](https://zenodo.org/records/22676356). The DOI provided for the project is **[10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355)**.
 
-O título do manuscrito é *STWIN: Subluminally Transported Wormhole Infrastructure Networks — A Conditional Framework for Persistent Interstellar Communication, Transport, and Topological Infrastructure*, versão **1.0 (setembro de 2026)**. Ao citar uma versão específica, use o DOI correspondente exibido no Zenodo. Ao discutir alterações ainda presentes apenas no GitHub, inclua também o hash do commit ou um permalink do arquivo.
+The manuscript is titled *STWIN: Subluminally Transported Wormhole Infrastructure Networks — A Conditional Framework for Persistent Interstellar Communication, Transport, and Topological Infrastructure*, version **1.0 (September 2026)**. When citing a specific version, use its corresponding DOI as displayed on Zenodo. When discussing changes available only on GitHub, also include the commit hash or a file permalink.
 
-O repositório não inclui atualmente um arquivo `CITATION.cff`.
+The repository does not currently include a `CITATION.cff` file.
 
-## Licença
+## License
 
-O artigo e a documentação do projeto são disponibilizados sob a licença **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
+The paper and project documentation are made available under **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
 
-Consulte o texto da licença no link acima para as condições aplicáveis à reutilização. Ao reutilizar o material, atribua o crédito à autoria, indique a licença e informe eventuais alterações.
+See the linked license text for the applicable reuse terms. When reusing the material, credit the authorship, identify the license, and indicate any changes.
