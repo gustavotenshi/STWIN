@@ -1,5 +1,10 @@
 # STWIN
 
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22676355-blue)](https://doi.org/10.5281/zenodo.22676355)
+[![Zenodo](https://img.shields.io/badge/Zenodo-Publicação_oficial-blue)](https://zenodo.org/records/22676356)
+[![Versão do manuscrito](https://img.shields.io/badge/Manuscrito-v1.0-green)](STWIN_Paper_EN.md)
+[![Licença: CC BY 4.0](https://img.shields.io/badge/Licença-CC_BY_4.0-lightgrey)](https://creativecommons.org/licenses/by/4.0/)
+
 **Subluminally Transported Wormhole Infrastructure Networks**
 
 Uma proposta conceitual de infraestrutura interestelar baseada no transporte subluminal de bocas de buracos de minhoca atravessáveis.
@@ -10,7 +15,9 @@ A ideia central é separar o **tempo necessário para instalar uma conexão** da
 
 > **Status:** pesquisa conceitual e arquitetura teórica condicional. O artigo não apresenta uma tecnologia demonstrada nem um projeto de engenharia realizável com a física atual. A possibilidade física dos componentes necessários é uma hipótese fundamental do modelo.
 
-**Comece pelo [artigo completo em inglês](STWIN_Paper_EN.md)** ou baixe a [versão em Word](STWIN_Paper_EN.docx). O manuscrito se identifica como **versão 1.0 — setembro de 2026**.
+**Publicação acadêmica oficial:** [acesse o registro no Zenodo](https://zenodo.org/records/22676356). **DOI:** [10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355).
+
+Para leitura no repositório, abra o [artigo completo em inglês](STWIN_Paper_EN.md) ou baixe a [versão em Word](STWIN_Paper_EN.docx). O manuscrito se identifica como **versão 1.0 — setembro de 2026**.
 
 ## Sumário
 
@@ -25,6 +32,7 @@ A ideia central é separar o **tempo necessário para instalar uma conexão** da
 - [Guia de leitura](#guia-de-leitura)
 - [Agenda de pesquisa](#agenda-de-pesquisa)
 - [Como contribuir](#como-contribuir)
+- [Publicação e versionamento](#publicação-e-versionamento)
 - [Referências e citação](#referências-e-citação)
 - [Licença](#licença)
 
@@ -183,14 +191,36 @@ Para propor uma alteração:
 
 Não há um processo automatizado de sincronização dos documentos ou validação científica neste repositório. A revisão das alterações é documental e conceitual.
 
+## Publicação e versionamento
+
+O projeto utiliza dois espaços complementares:
+
+| Espaço | Finalidade |
+| --- | --- |
+| [Zenodo](https://zenodo.org/records/22676356) | Publicação acadêmica arquivada, identificada por DOI e usada como referência para citação. |
+| [GitHub](https://github.com/gustavotenshi/STWIN) | Documentação em evolução, manuscrito em Markdown, histórico de alterações, issues e discussão técnica. Pode também reunir futuras figuras, simulações e cálculos. |
+
+Para futuras versões do artigo, como `v1.1` ou `v2.0`, o fluxo de publicação proposto é:
+
+1. Atualizar e revisar os arquivos do manuscrito, registrando as mudanças em um changelog.
+2. Criar uma release correspondente no GitHub, com a versão e as notas de alteração.
+3. Publicar a nova versão no Zenodo e registrar seu DOI nas notas da release.
+4. Atualizar os links e o badge de versão deste README para manter a correspondência entre os materiais.
+
+No cadastro do Zenodo, o endereço `https://github.com/gustavotenshi/STWIN` deve constar como repositório relacionado. Este README já oferece o caminho do GitHub para a publicação acadêmica.
+
 ## Referências e citação
 
 A bibliografia está ao final do [artigo em Markdown](STWIN_Paper_EN.md), com trabalhos sobre buracos de minhoca atravessáveis, proteção cronológica, restrições quânticas de energia, ER=EPR e geometrias com múltiplas bocas, além da fonte usada para a distância a Proxima Centauri.
 
-Para mencionar este material, use o título do manuscrito — *STWIN: Subluminally Transported Wormhole Infrastructure Networks — A Conditional Framework for Persistent Interstellar Communication, Transport, and Topological Infrastructure* —, a versão **1.0 (setembro de 2026)** e o endereço do [repositório](https://github.com/gustavotenshi/STWIN). Para identificar exatamente a revisão consultada, inclua o hash do commit ou um permalink do arquivo.
+Para citar a publicação acadêmica, consulte os metadados e as opções de exportação de citação no [registro do Zenodo](https://zenodo.org/records/22676356). O DOI informado para o projeto é **[10.5281/zenodo.22676355](https://doi.org/10.5281/zenodo.22676355)**.
 
-O repositório não inclui atualmente metadados formais de citação em `CITATION.cff` nem um DOI próprio indicado no manuscrito.
+O título do manuscrito é *STWIN: Subluminally Transported Wormhole Infrastructure Networks — A Conditional Framework for Persistent Interstellar Communication, Transport, and Topological Infrastructure*, versão **1.0 (setembro de 2026)**. Ao citar uma versão específica, use o DOI correspondente exibido no Zenodo. Ao discutir alterações ainda presentes apenas no GitHub, inclua também o hash do commit ou um permalink do arquivo.
+
+O repositório não inclui atualmente um arquivo `CITATION.cff`.
 
 ## Licença
 
-Este repositório ainda não contém um arquivo `LICENSE` ou uma declaração explícita de licença de uso. As condições de reutilização e redistribuição precisam ser definidas pelo titular do material.
+O artigo e a documentação do projeto são disponibilizados sob a licença **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
+
+Consulte o texto da licença no link acima para as condições aplicáveis à reutilização. Ao reutilizar o material, atribua o crédito à autoria, indique a licença e informe eventuais alterações.
