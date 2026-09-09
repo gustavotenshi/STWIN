@@ -1,4 +1,4 @@
-﻿# STWIN
+# STWIN
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22676355-blue)](https://doi.org/10.5281/zenodo.22676355)
 [![Zenodo](https://img.shields.io/badge/Zenodo-Official_publication-blue)](https://zenodo.org/records/22676356)
@@ -19,7 +19,7 @@ The central idea separates **the time required to install a connection** from **
 
 To read the manuscript in this repository, open the [full English paper](STWIN_Paper_EN.md) or download the [Word version](STWIN_Paper_EN.docx). The manuscript identifies itself as **version 1.0 — September 2026**.
 
-**Follow the research:** see the [master research roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) and the [first temporal conclusion — NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>), both in Portuguese. The next defined step is **SRP-2.1 — Two-Mouth Causal Model**.
+**Follow the research:** see the [master research roadmap](STWIN_Master_Research_Roadmap_EN.md) in English and the [first temporal conclusion — NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) in English. The next defined step is **SRP-2.1 — Two-Mouth Causal Model**.
 
 ## Contents
 
@@ -54,14 +54,16 @@ The material is intended for readers interested in relativity, gravitation, inte
 | [README.md](README.md) | English project overview, reading guide, and contribution instructions. |
 | [STWIN_Paper_EN.md](STWIN_Paper_EN.md) | English manuscript with 21 sections, equations, a case study, and references. |
 | [STWIN_Paper_EN.docx](STWIN_Paper_EN.docx) | Word version of the paper. |
-| [Master research roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) | Portuguese research program, version 1.0, covering 30 research domains (SRP-0 through SRP-29), questions, dependencies, and progress states. |
-| [NER/SNT temporal conclusion](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) | Portuguese note on Network Epoch Reset, STWIN Network Time, and the Forward-Time Operational Principle. Identified in the text as STWIN-C3. |
+| [Master research roadmap](STWIN_Master_Research_Roadmap_EN.md) | English research program, version 1.0, covering 30 research domains (SRP-0 through SRP-29), questions, dependencies, and progress states. |
+| [Roadmap in Word](STWIN_Master_Research_Roadmap_EN.docx) | English Word version of the roadmap. |
+| [Original Portuguese roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) | Original Portuguese document retained for reference. |
+| [NER/SNT temporal conclusion](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) | English note on Network Epoch Reset, STWIN Network Time, and the Forward-Time Operational Principle. Identified in the text as STWIN-C3. |
 
 This is a documentation repository. It currently contains no software, simulators, experimental datasets, runtime dependencies, or automated test suite.
 
 ## Current research status
 
-The [master roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) records the following state of the program:
+The [master roadmap](STWIN_Master_Research_Roadmap_EN.md) records the following state of the program:
 
 | Research item | Status |
 | --- | --- |
@@ -194,7 +196,7 @@ The first deployment still requires a subluminal journey in the baseline scenari
 
 ## Reading guide
 
-To follow the program, the suggested sequence is **conceptual paper → NER/SNT temporal conclusion → master roadmap**, focusing on the next question, SRP-2.1. All three documents are linked under [Repository contents](#repository-contents). The paper is in English; the conclusion and roadmap are in Portuguese.
+To follow the program, the suggested sequence is **conceptual paper → NER/SNT temporal conclusion → master roadmap**, focusing on the next question, SRP-2.1. All three documents are linked under [Repository contents](#repository-contents). The paper, conclusion, and roadmap are available in English; the original Portuguese roadmap is also retained.
 
 The sections below belong to the [full manuscript](STWIN_Paper_EN.md):
 
@@ -211,7 +213,7 @@ The sections below belong to the [full manuscript](STWIN_Paper_EN.md):
 
 ## Research agenda
 
-The [master roadmap](STWIN_Master_Research_Roadmap_PT-BR.docx) develops the paper's agenda into 30 domains. The table summarizes their scope; individual question statuses and dependencies are recorded in the full document.
+The [master roadmap](STWIN_Master_Research_Roadmap_EN.md) develops the paper's agenda into 30 domains. The table summarizes their scope; individual question statuses and dependencies are recorded in the full document.
 
 | Domains | Scope |
 | --- | --- |

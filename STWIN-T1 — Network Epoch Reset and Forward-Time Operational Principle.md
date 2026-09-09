@@ -1,411 +1,408 @@
-# STWIN-C3 — Network Epoch Reset, STWIN Network Time e Forward-Time Operational Principle
+# STWIN-C3 — Network Epoch Reset, STWIN Network Time and Forward-Time Operational Principle
 
-**Status:** ✅ Concluído no nível conceitual  
-**Status físico:** ⏳ Ainda não demonstrado por uma geometria de wormhole fisicamente realizável
+**Status:** ✅ Concluded at the conceptual level
 
-## 1. Problema original
+**Physical status:** ⏳ Not yet demonstrated by a physically realizable wormhole geometry
 
-O primeiro problema conceitual derivado do paper STWIN foi a aparente dificuldade de sincronizar temporalmente duas extremidades de um wormhole após uma implantação interestelar.
+## 1. Original problem
 
-Se uma boca permanece na Terra e a outra é transportada em uma sonda até Proxima Centauri, ambas podem acumular tempos próprios diferentes devido a efeitos relativísticos associados à velocidade, à aceleração, à trajetória e aos potenciais gravitacionais atravessados.
+The first conceptual problem arising from the STWIN paper was the apparent difficulty of temporally synchronizing two wormhole endpoints after an interstellar deployment.
 
-Em um exemplo simplificado, no instante em que a boca remota chega ao destino, poderíamos ter:
+If one mouth remains on Earth while the other is transported by a probe to Proxima Centauri, they may accumulate different amounts of proper time due to relativistic effects associated with velocity, acceleration, trajectory, and the gravitational potentials encountered.
 
-- endpoint terrestre: 10 anos de tempo próprio acumulado;
-- endpoint remoto: 8 anos de tempo próprio acumulado.
+In a simplified example, when the remote mouth reaches its destination, we might have:
 
-A questão inicial era se o STWIN precisaria "corrigir" essa diferença para tornar a conexão operacional.
+- Earth endpoint: 10 years of accumulated proper time;
+- remote endpoint: 8 years of accumulated proper time.
 
-A conclusão alcançada foi que **não é necessário igualar fisicamente os tempos próprios das extremidades**.
+The initial question was whether STWIN would need to "correct" this difference to make the connection operational.
 
-A diferença acumulada durante a implantação pode ser preservada como parte da história física de cada endpoint.
+The conclusion was that **there is no need to physically equalize the proper times of the endpoints**.
+
+The difference accumulated during deployment can be preserved as part of each endpoint's physical history.
 
 ---
 
-## 2. Princípio da história local de implantação
+## 2. Local deployment history principle
 
-Cada extremidade de wormhole possui sua própria worldline e, portanto, sua própria história relativística.
+Each wormhole endpoint has its own worldline and therefore its own relativistic history.
 
-Representamos a trajetória de um endpoint \(i\) por:
+We represent the worldline of an endpoint \(i\) as:
 
 ```math
 \Gamma_i(\tau_i)
 ```
 
-onde \(\tau_i\) é o tempo próprio acumulado ao longo dessa trajetória.
+where \(\tau_i\) is the proper time accumulated along that worldline.
 
-A história de implantação pode incluir:
+Deployment history may include:
 
-- criação ou preparação do endpoint;
-- lançamento;
-- aceleração;
-- cruzeiro interestelar;
-- desaceleração;
-- passagem por diferentes potenciais gravitacionais;
-- chegada ao sistema de destino;
-- estabilização;
-- calibração;
-- ativação.
+- endpoint creation or preparation;
+- launch;
+- acceleration;
+- interstellar cruise;
+- deceleration;
+- passage through different gravitational potentials;
+- arrival at the destination system;
+- stabilization;
+- calibration;
+- activation.
 
-Essa história não é apagada quando o endpoint entra em operação.
+This history is not erased when the endpoint becomes operational.
 
-O STWIN adota, portanto, a seguinte interpretação:
+STWIN therefore adopts the following interpretation:
 
-> **Cada wormhole preserva sua própria história de implantação.**
+> **Each wormhole preserves its own deployment history.**
 
-Uma formulação curta para esse princípio é:
+A concise formulation of this principle is:
 
 > **Deployment history is local. Network time begins at activation.**
 
-ou:
-
-> **A história da implantação é local. O tempo da rede começa na ativação.**
-
-A diferença entre tempos próprios é tratada como **proveniência temporal local**, e não como o relógio operacional que deve governar toda a rede.
+The difference between proper times is treated as **local temporal provenance**, rather than as the operational clock that must govern the entire network.
 
 ---
 
 ## 3. Network Epoch Reset — NER
 
-Quando um novo endpoint completa sua implantação e é considerado operacional, define-se um evento de ativação \(E_i\).
+When a new endpoint completes its deployment and is considered operational, an activation event \(E_i\) is defined.
 
-Nesse evento, a infraestrutura aplica um **Network Epoch Reset — NER**.
+At this event, the infrastructure applies a **Network Epoch Reset — NER**.
 
-O NER não altera retroativamente a física da viagem, não modifica o tempo próprio acumulado e não "apaga" efeitos relativísticos.
+NER does not retroactively alter the physics of the journey, modify accumulated proper time, or "erase" relativistic effects.
 
-Ele cria apenas uma nova referência lógica para a operação da rede.
+It only creates a new logical reference for network operation.
 
-Podemos representar a ativação por:
+We can represent activation as:
 
 ```math
 T_{\mathrm{SNT}}(E_i) = T_{\mathrm{activation}}
 ```
 
-Em uma implantação simples, pode-se escolher:
+For a simple deployment, one may choose:
 
 ```math
 T_{\mathrm{activation}} = 0
 ```
 
-Assim, mesmo que no instante de ativação:
+Thus, even if at activation:
 
 ```math
-\tau_A = 10 \text{ anos}
+\tau_A = 10 \text{ years}
 ```
 
-e:
+and:
 
 ```math
-\tau_B = 8 \text{ anos},
+\tau_B = 8 \text{ years},
 ```
 
-a rede pode definir:
+the network can define:
 
 ```math
 T_{\mathrm{SNT},A} = 0
 ```
 
-e:
+and:
 
 ```math
 T_{\mathrm{SNT},B} = 0.
 ```
 
-Os valores 10 e 8 continuam fisicamente verdadeiros como histórico local.
+The values 10 and 8 remain physically valid as local history.
 
-A operação da infraestrutura, entretanto, passa a ser organizada por uma nova época comum.
+Infrastructure operation, however, is now organized around a new shared epoch.
 
 ---
 
 ## 4. STWIN Network Time — SNT
 
-Após o NER, os eventos operacionais são ordenados pelo **STWIN Network Time — SNT**.
+After NER, operational events are ordered by **STWIN Network Time — SNT**.
 
-O SNT não substitui os relógios locais.
+SNT does not replace local clocks.
 
-Um sistema conectado ao STWIN pode continuar mantendo:
+A system connected to STWIN may continue to maintain:
 
-- tempo próprio do endpoint;
-- relógios atômicos locais;
-- horário civil;
-- calendário planetário;
-- data astronômica;
-- histórico de missão.
+- endpoint proper time;
+- local atomic clocks;
+- civil time;
+- a planetary calendar;
+- astronomical dates;
+- mission history.
 
-O SNT constitui uma camada adicional destinada à ordenação global dos eventos da infraestrutura.
+SNT provides an additional layer intended to establish a global ordering of infrastructure events.
 
-Cada nó poderá futuramente possuir uma transformação do tipo:
+Each node may eventually have a transformation of the form:
 
 ```math
 T_{\mathrm{SNT}} = f_i(\tau_i, \Gamma_i, g_{\mu\nu}, \ldots)
 ```
 
-onde \(f_i\) representa a relação entre a história temporal local do nó e o tempo lógico da rede.
+where \(f_i\) represents the relationship between the node's local temporal history and the network's logical time.
 
-A implementação matemática exata dessa função ainda é uma questão de pesquisa.
+The exact mathematical implementation of this function remains a research question.
 
 ---
 
 ## 5. Forward-Time Operational Principle
 
-O requisito fundamental do STWIN não é simultaneidade absoluta.
+The fundamental requirement of STWIN is not absolute simultaneity.
 
-É **monotonicidade temporal**.
+It is **temporal monotonicity**.
 
-Para qualquer travessia válida, o evento de saída deve ocorrer depois do evento de entrada em STWIN Network Time:
+For every valid traversal, the exit event must occur after the entry event in STWIN Network Time:
 
 ```math
 T_{\mathrm{out}} > T_{\mathrm{in}}.
 ```
 
-Equivalentemente:
+Equivalently:
 
 ```math
 T_{\mathrm{out}} = T_{\mathrm{in}} + \delta_W
 ```
 
-com:
+with:
 
 ```math
 \delta_W > 0.
 ```
 
-Esse princípio pode ser expresso em linguagem natural como:
+This principle can be expressed in ordinary language as:
 
-> **Quanto mais tarde alguém entra, mais tarde deve sair.**
+> **The later someone enters, the later they must exit.**
 
-Para comunicação:
+For communication:
 
-> **Quanto mais tarde uma mensagem é enviada, mais tarde ela deve ser recebida.**
+> **The later a message is sent, the later it must be received.**
 
-O STWIN não tem como objetivo criar uma máquina do tempo, inverter a causalidade ou permitir retornos ao próprio passado.
+STWIN does not aim to create a time machine, reverse causality, or allow a return to one's own past.
 
-O objetivo é obter uma conexão extremamente mais rápida do que a propagação convencional pelo espaço externo, mas que permaneça estritamente orientada para o futuro.
+The objective is to obtain a connection vastly faster than conventional propagation through exterior space while remaining strictly future-directed.
 
 ---
 
-## 6. Latência não precisa ser zero
+## 6. Latency does not need to be zero
 
-A arquitetura não exige travessia instantânea.
+The architecture does not require instantaneous traversal.
 
-Ao contrário, o modelo conceitual básico assume uma latência positiva:
+Instead, the baseline conceptual model assumes positive latency:
 
 ```math
 \delta_W > 0.
 ```
 
-Para uma separação externa \(D\), o requisito útil é:
+For an exterior separation \(D\), the condition for a useful connection is:
 
 ```math
 0 < \delta_W \ll \frac{D}{c}.
 ```
 
-Para Terra–Proxima Centauri:
+For Earth–Proxima Centauri:
 
 ```math
-\frac{D}{c} \approx 4.24 \text{ anos}.
+\frac{D}{c} \approx 4.24 \text{ years}.
 ```
 
-Portanto, uma comunicação que leve segundos já seria revolucionária.
+Communication taking seconds would therefore already be revolutionary.
 
-O objetivo de uma classe de comunicação STWIN pode ser aproximadamente:
+The target for a STWIN communication class might be approximately:
 
 ```math
-\delta_{\mathrm{comm}} \sim \text{segundos}
+\delta_{\mathrm{comm}} \sim \text{seconds}
 ```
 
-ou menos, desde que continue positiva.
+or less, provided it remains positive.
 
-Para transporte físico, especialmente transporte humano, a restrição pode ser muito mais relaxada.
+For physical transport, especially human transport, the constraint may be much more relaxed.
 
-Uma travessia de minutos, dezenas de minutos ou horas pode continuar sendo perfeitamente aceitável:
+A traversal lasting minutes, tens of minutes, or hours may still be entirely acceptable:
 
 ```math
 \delta_{\mathrm{transport}} > 0.
 ```
 
-A arquitetura deve, portanto, distinguir entre:
+The architecture should therefore distinguish between:
 
-- **STWIN-COM:** comunicação e transmissão de informação;
-- **STWIN-TRANS:** transporte de matéria e, eventualmente, seres humanos.
+- **STWIN-COM:** communication and information transmission;
+- **STWIN-TRANS:** transport of matter and, potentially, humans.
 
-Essas modalidades podem possuir requisitos de latência completamente diferentes.
-
----
-
-## 7. NER não altera a causalidade física
-
-Uma distinção essencial foi estabelecida:
-
-> **NER organiza o tempo lógico; ele não altera sozinho a estrutura causal do espaço-tempo.**
-
-Se uma geometria real de wormhole conectasse um evento posterior a um evento fisicamente anterior, nenhuma mudança de relógio ou nomenclatura seria capaz de eliminar a violação causal.
-
-Portanto, é necessário distinguir:
-
-1. **tempo próprio local**;
-2. **tempo lógico STWIN**;
-3. **estrutura causal física do espaço-tempo**.
-
-O SNT é uma ferramenta de coordenação.
-
-A causalidade real continua sendo determinada pela geometria física do wormhole e pelas worldlines de seus endpoints.
-
-Essa ressalva é central: a solução temporal do STWIN é conceitualmente elegante, mas sua implementação depende da existência de uma geometria que respeite a ordenação futura exigida.
+These modes may have entirely different latency requirements.
 
 ---
 
-## 8. Camada de segurança causal
+## 7. NER does not alter physical causality
 
-O STWIN assume que uma infraestrutura real possuiria uma camada permanente de segurança e validação causal.
+An essential distinction has been established:
 
-Antes de qualquer travessia, o sistema deveria estimar o evento de saída e verificar se a operação satisfaz:
+> **NER organizes logical time; it does not, by itself, alter the causal structure of spacetime.**
+
+If an actual wormhole geometry connected a later event to a physically earlier event, no change of clocks or terminology could eliminate the causal violation.
+
+It is therefore necessary to distinguish:
+
+1. **local proper time**;
+2. **STWIN logical time**;
+3. **the physical causal structure of spacetime**.
+
+SNT is a coordination tool.
+
+Actual causality remains determined by the wormhole's physical geometry and the worldlines of its endpoints.
+
+This qualification is central: STWIN's temporal solution is conceptually elegant, but its implementation depends on the existence of a geometry that respects the required future-directed ordering.
+
+---
+
+## 8. Causal safety layer
+
+STWIN assumes that an actual infrastructure would have a permanent causal safety and validation layer.
+
+Before any traversal, the system should estimate the exit event and verify that the operation satisfies:
 
 ```math
 \delta_W > 0.
 ```
 
-Uma arquitetura operacional simples poderia seguir:
+A simple operational architecture could follow this sequence:
 
 ```text
-solicitação de travessia
+traversal request
         ↓
-previsão do evento de saída
+exit event prediction
         ↓
-validação causal
+causal validation
         ↓
 δW > 0 ?
-   ├─ sim → autorizar
-   └─ não → bloquear
+   ├─ yes → authorize
+   └─ no  → block
 ```
 
-Essa camada poderá monitorar:
+This layer could monitor:
 
-- relação entre tempos próprios locais e SNT;
-- trajetória e movimento dos endpoints;
-- estado da geometria;
-- latência prevista;
-- offsets temporais;
-- drift temporal;
-- condições de instabilidade;
-- margem de segurança causal.
+- the relationship between local proper times and SNT;
+- endpoint trajectories and motion;
+- the state of the geometry;
+- predicted latency;
+- temporal offsets;
+- temporal drift;
+- instability conditions;
+- the causal safety margin.
 
-A regra de segurança recomendada é:
+The recommended safety rule is:
 
-> **Em caso de incerteza causal, o canal deve falhar fechado.**
+> **In the event of causal uncertainty, the channel must fail closed.**
 
-Ou seja: falta de garantia de causalidade implica bloqueio da travessia.
+In other words, if causality cannot be guaranteed, traversal must be blocked.
 
 ---
 
-## 9. Controle de trajetória e Active Wormhole Compensation
+## 9. Trajectory control and Active Wormhole Compensation
 
-Três estratégias complementares foram identificadas:
+Three complementary strategies have been identified:
 
-### A. Controle de trajetória
+### A. Trajectory control
 
-Se o movimento de uma boca puder produzir offsets perigosos, um sistema autônomo poderá ajustar velocidade e aceleração para manter a implantação dentro de uma região causalmente segura.
+If mouth motion can produce dangerous offsets, an autonomous system could adjust velocity and acceleration to keep deployment within a causally safe region.
 
 ### B. STWIN Network Time
 
-O SNT fornece a referência comum necessária para ordenar eventos sem exigir igualdade de tempo próprio.
+SNT provides the shared reference needed to order events without requiring equal proper times.
 
 ### C. Active Wormhole Compensation — AWC
 
-Se futuras teorias físicas identificarem algum grau de liberdade controlável na geometria do wormhole, representado provisoriamente por:
+If future physical theories identify a controllable degree of freedom in the wormhole geometry, provisionally represented by:
 
 ```math
 \lambda(t),
 ```
 
-poderá ser possível controlar:
+it might be possible to control:
 
 ```math
 T_{\mathrm{out}} = F(T_{\mathrm{in}}, \lambda)
 ```
 
-de forma a preservar:
+so as to preserve:
 
 ```math
 \delta_W > 0.
 ```
 
-Nesse cenário, algoritmos ou IA não "criariam" a física necessária.
+In this scenario, algorithms or AI would not "create" the required physics.
 
-Eles funcionariam como sistemas de controle de um mecanismo físico real capaz de modificar a geometria da conexão.
+They would act as control systems for an actual physical mechanism capable of modifying the connection's geometry.
 
-O AWC permanece uma hipótese de engenharia futura e não é considerado um mecanismo demonstrado.
+AWC remains a future engineering hypothesis and is not considered a demonstrated mechanism.
 
 ---
 
-## 10. Escalabilidade temporal
+## 10. Temporal scalability
 
-Uma consequência importante do NER é sua escalabilidade.
+An important consequence of NER is its scalability.
 
-Se a civilização implantar dezenas, centenas ou milhares de wormholes, tentar fazer todos os relógios físicos acumularem o mesmo tempo seria impraticável e, em relatividade, conceitualmente desnecessário.
+If a civilization deploys dozens, hundreds, or thousands of wormholes, attempting to make all physical clocks accumulate the same elapsed time would be impractical and, in relativity, conceptually unnecessary.
 
-Exemplo:
+Example:
 
 ```text
-Terra → Proxima       história A
-Proxima → Sirius      história B
-Terra → Tau Ceti      história C
-Sirius → Sistema D    história D
+Earth → Proxima      history A
+Proxima → Sirius     history B
+Earth → Tau Ceti     history C
+Sirius → System D    history D
 ```
 
-Cada ligação poderá possuir:
+Each link may have a different:
 
-- duração de implantação diferente;
-- velocidade diferente;
-- trajetória diferente;
-- tempo próprio diferente;
-- potencial gravitacional diferente.
+- deployment duration;
+- velocity;
+- trajectory;
+- proper time;
+- gravitational potential.
 
-Essas histórias permanecem locais.
+These histories remain local.
 
-Ao entrar em operação:
+Upon entering operation:
 
 ```text
-história de implantação
+deployment history
         ↓
-evento de ativação
+activation event
         ↓
 Network Epoch Reset
         ↓
-integração ao STWIN Network Time
+integration into STWIN Network Time
 ```
 
-Assim, o STWIN evita a necessidade de sincronizar retroativamente todos os históricos físicos da rede.
+STWIN thus avoids the need to retroactively synchronize all of the network's physical histories.
 
 ---
 
 ## 11. STWIN Temporal Monotonicity Principle — STMP
 
-Como consequência do Forward-Time Operational Principle, propõe-se um princípio mais geral:
+As a consequence of the Forward-Time Operational Principle, a more general principle is proposed:
 
-Para qualquer sequência válida de eventos operacionais:
+For any valid sequence of operational events:
 
 ```math
 E_1 \prec E_2 \prec E_3 \prec \ldots
 ```
 
-o SNT deve satisfazer:
+SNT must satisfy:
 
 ```math
 T(E_1) < T(E_2) < T(E_3) < \ldots
 ```
 
-Nenhuma operação válida da infraestrutura pode produzir:
+No valid infrastructure operation may produce:
 
 ```math
 T(E_{n+1}) < T(E_n).
 ```
 
-Esse princípio deverá ser generalizado posteriormente para redes com múltiplos nós e ciclos.
+This principle should later be generalized to networks with multiple nodes and cycles.
 
 ---
 
-## 12. Formulação acadêmica consolidada
+## 12. Consolidated academic formulation
 
 > **STWIN-C3 — Network Epoch Reset and Forward-Time Operational Principle**
 >
@@ -425,27 +422,27 @@ Esse princípio deverá ser generalizado posteriormente para redes com múltiplo
 
 ---
 
-## 13. Conclusão da etapa
+## 13. Conclusion of this stage
 
-A primeira questão temporal do STWIN está **resolvida conceitualmente**, não fisicamente.
+STWIN's first temporal question is **conceptually resolved**, not physically resolved.
 
-### Concluído
+### Concluded
 
-- ✅ Não é necessário igualar tempos próprios.
-- ✅ Cada implantação pode preservar sua própria história relativística.
-- ✅ O NER separa história de implantação de operação da rede.
-- ✅ O SNT fornece uma referência lógica comum.
-- ✅ O requisito central é monotonicidade futura.
-- ✅ Comunicação deve buscar latência de segundos ou menos.
-- ✅ Transporte físico pode tolerar latências positivas maiores.
-- ✅ Segurança deve bloquear qualquer travessia que não garanta \(\delta_W>0\).
-- ✅ Active Wormhole Compensation é uma hipótese futura de controle geométrico, não uma solução física já conhecida.
+- ✅ Proper times do not need to be equalized.
+- ✅ Each deployment can preserve its own relativistic history.
+- ✅ NER separates deployment history from network operation.
+- ✅ SNT provides a shared logical reference.
+- ✅ The central requirement is future-directed monotonicity.
+- ✅ Communication should target latencies of seconds or less.
+- ✅ Physical transport can tolerate larger positive latencies.
+- ✅ The safety layer must block any traversal that cannot guarantee \(\delta_W>0\).
+- ✅ Active Wormhole Compensation is a future hypothesis for geometric control, not an already known physical solution.
 
-### Ainda não demonstrado
+### Not yet demonstrated
 
-- ⏳ Que uma geometria de wormhole transportável possa obedecer fisicamente ao NER/SNT.
-- ⏳ Que seja possível garantir \(\delta_W>0\) em todas as condições relevantes.
-- ⏳ Que uma boca móvel possa preservar conectividade sem criar closed timelike curves.
-- ⏳ Que exista um mecanismo de compensação geométrica fisicamente realizável.
+- ⏳ That a transportable wormhole geometry can physically satisfy NER/SNT requirements.
+- ⏳ That \(\delta_W>0\) can be guaranteed under all relevant conditions.
+- ⏳ That a moving mouth can preserve connectivity without creating closed timelike curves.
+- ⏳ That a physically realizable mechanism for geometric compensation exists.
 
-A próxima etapa científica deve, portanto, atacar a diferença entre **ordenação lógica** e **ordenação causal física**.
+The next scientific step must therefore address the difference between **logical ordering** and **physical causal ordering**.
