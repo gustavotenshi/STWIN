@@ -19,10 +19,13 @@ A ideia central é separar o **tempo necessário para instalar uma conexão** da
 
 Para leitura no repositório, abra o [artigo completo em inglês](STWIN_Paper_EN.md) ou baixe a [versão em Word](STWIN_Paper_EN.docx). O manuscrito se identifica como **versão 1.0 — setembro de 2026**.
 
+**Acompanhe a pesquisa:** consulte o [roadmap mestre em português](STWIN_Master_Research_Roadmap_PT-BR.docx) e a [primeira conclusão temporal — NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>). A próxima etapa definida é **SRP-2.1 — modelo causal de duas bocas**.
+
 ## Sumário
 
 - [Sobre o projeto](#sobre-o-projeto)
 - [Conteúdo do repositório](#conteúdo-do-repositório)
+- [Estado atual da pesquisa](#estado-atual-da-pesquisa)
 - [Como acessar](#como-acessar)
 - [Como a arquitetura funciona](#como-a-arquitetura-funciona)
 - [Conceitos principais](#conceitos-principais)
@@ -51,8 +54,46 @@ O material se destina a leitores interessados em relatividade, gravitação, com
 | [README.md](README.md) | Apresentação em português e orientação para leitura e contribuição. |
 | [STWIN_Paper_EN.md](STWIN_Paper_EN.md) | Manuscrito em inglês, com 21 seções, equações, estudo de caso e referências. |
 | [STWIN_Paper_EN.docx](STWIN_Paper_EN.docx) | Versão do artigo em formato Word. |
+| [Roadmap mestre da pesquisa](STWIN_Master_Research_Roadmap_PT-BR.docx) | Programa em português, versão 1.0, com 30 domínios de pesquisa (SRP-0 a SRP-29), perguntas, dependências e estados de avanço. |
+| [Conclusão temporal NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) | Nota em português sobre Network Epoch Reset, STWIN Network Time e o princípio de operação orientada para o futuro. Identificada no texto como STWIN-C3. |
 
 O repositório é documental. Atualmente não contém software, simuladores, dados experimentais, dependências de execução ou uma suíte de testes automatizados.
+
+## Estado atual da pesquisa
+
+O [roadmap mestre](STWIN_Master_Research_Roadmap_PT-BR.docx) registra o seguinte estágio do programa:
+
+| Frente | Estado |
+| --- | --- |
+| Artigo conceitual STWIN v1 | Publicado. |
+| Questão inicial sobre diferenças de tempo próprio | Concluída no nível conceitual. |
+| Network Epoch Reset e Forward-Time Operational Principle | Adotados conceitualmente. |
+| STWIN Network Time | Arquitetura selecionada; formalização matemática pendente. |
+| Realização física de NER/SNT | Em aberto. |
+| SRP-2.1 — modelo causal de duas bocas | Próxima etapa definida. |
+| Dinâmica de bocas móveis, energia, capacidade e redes | Investigações futuras. |
+
+### Primeira conclusão temporal
+
+A [nota NER/SNT](<STWIN-T1 — Network Epoch Reset and Forward-Time Operational Principle.md>) adota uma arquitetura em que cada boca conserva sua história relativística e seu tempo próprio. Não se exige que os tempos próprios acumulados pelas duas extremidades sejam iguais.
+
+Na ativação, o **Network Epoch Reset (NER)** estabelece uma referência lógica de operação. O **STWIN Network Time (SNT)** organiza os eventos da infraestrutura sem substituir os relógios locais. O **Forward-Time Operational Principle** exige, para cada travessia admissível:
+
+```text
+T_out = T_in + δ_W, com δ_W > 0
+```
+
+A nota distingue **STWIN-COM**, voltado à comunicação, de **STWIN-TRANS**, voltado ao transporte de matéria. Segundos ou menos são uma meta arquitetural para comunicação; transporte poderia tolerar latências positivas maiores. Esses valores não são capacidades demonstradas.
+
+**Alcance da conclusão:** NER/SNT define uma camada lógica e um requisito operacional. A correspondência dessa ordenação com a estrutura causal física ainda precisa ser demonstrada. Redefinir relógios não altera a geometria nem elimina, por si só, curvas temporais fechadas. A hipótese de compensação geométrica ativa (*Active Wormhole Compensation*) também permanece em aberto.
+
+O arquivo dessa conclusão tem o prefixo **STWIN-T1**, enquanto seu título e o roadmap usam **STWIN-C3**. Ambos se referem à nota vinculada acima.
+
+### Próxima pergunta — SRP-2.1
+
+Com uma boca na Terra e outra em Proxima Centauri, qual condição física garante que uma travessia com `T_out > T_in` no SNT também seja orientada para o futuro na estrutura causal do espaço-tempo?
+
+O escopo definido no roadmap é **duas bocas, uma mensagem e estrutura causal**. A etapa deverá modelar as trajetórias das bocas, os eventos de entrada e saída e a relação entre SNT e causalidade física. Redes com múltiplos nós e requisitos avançados de energia, transporte e segurança ficam para etapas posteriores.
 
 ## Como acessar
 
@@ -153,6 +194,8 @@ A primeira implantação continua exigindo uma viagem subluminal no cenário bá
 
 ## Guia de leitura
 
+Para acompanhar o programa, a sequência sugerida é: **artigo conceitual → conclusão temporal NER/SNT → roadmap mestre**, com atenção à próxima pergunta SRP-2.1. Os três documentos estão vinculados em [Conteúdo do repositório](#conteúdo-do-repositório).
+
 As seções abaixo pertencem ao [manuscrito completo](STWIN_Paper_EN.md):
 
 | Interesse | Seções |
@@ -168,14 +211,26 @@ As seções abaixo pertencem ao [manuscrito completo](STWIN_Paper_EN.md):
 
 ## Agenda de pesquisa
 
-O artigo propõe frentes de investigação, sem apresentar essas etapas como resultados alcançados:
+O [roadmap mestre](STWIN_Master_Research_Roadmap_PT-BR.docx) desdobra a agenda do artigo em 30 domínios. A tabela resume seu escopo; os estados de cada pergunta e suas dependências estão no documento completo.
 
-- **Geometria e estabilidade:** caracterizar gargantas atravessáveis em cenários astrofísicos relevantes e sob aceleração.
-- **Restrições quânticas de energia:** determinar quais configurações de sustentação seriam admissíveis.
-- **Cronologia:** formular critérios para trajetórias e redes que excluam curvas temporais fechadas.
-- **Teoria da informação:** estimar capacidade, ruído, decoerência e efeitos do tráfego sobre a geometria.
-- **Topologia de redes:** estudar redundância, ciclos, roteamento e deslocamentos temporais entre conexões.
-- **Observação astrofísica:** investigar possíveis assinaturas que permitam restringir os modelos.
+| Domínios | Escopo |
+| --- | --- |
+| SRP-0–2 | Fundamentos, hipóteses mínimas, arquitetura temporal, causalidade e cronologia. |
+| SRP-3–4 | Geometria do buraco de minhoca e dinâmica de uma boca em movimento. |
+| SRP-5–6 | Missões de implantação, trajetórias, massa efetiva e energia de propulsão. |
+| SRP-7–8 | Energia exótica, tensor energia-momento, estabilidade e reação da geometria ao tráfego. |
+| SRP-9–10 | Comunicação, capacidade de canal e informação quântica. |
+| SRP-11–13 | Teoria de redes, grafos causais e tempo distribuído. |
+| SRP-14–16 | Controle autônomo, IA, prevenção de falhas e proteção contra ataques. |
+| SRP-17–18 | Transporte de matéria e requisitos adicionais para transporte biológico. |
+| SRP-19–20 | Expansão recursiva e consequências para uma civilização conectada. |
+| SRP-21–22 | Condições que inviabilizam o modelo e arquiteturas alternativas. |
+| SRP-23–27 | Simulações, formalização matemática, falsificabilidade, observação e experimentos análogos. |
+| SRP-28–29 | Publicações incrementais, registros de pesquisa, hipóteses, decisões e versionamento. |
+
+A sequência imediata parte de **SRP-2.1**, segue para diagramas de Minkowski e mapeamentos temporais (**SRP-2.2/2.3**) e então para margens de cronologia e condições de curvas temporais fechadas (**SRP-2.4/2.5**). O próximo alvo de publicação previsto é o **Paper II — arquitetura temporal e causalidade de duas bocas**.
+
+O método do programa é trabalhar uma pergunta central por vez, buscar refutações e registrar a conclusão, o grau de confiança, as objeções e as questões abertas. As afirmações devem distinguir física estabelecida, resultados teóricos conhecidos, extrapolações condicionais, hipóteses STWIN e especulação de engenharia.
 
 ## Como contribuir
 
@@ -188,6 +243,7 @@ Para propor uma alteração:
 3. Preserve a distinção entre resultados estabelecidos, resultados teóricos de domínio restrito e suposições do STWIN.
 4. Confira equações, unidades, referências, links e renderização do Markdown.
 5. Ao alterar o manuscrito, mantenha as versões `.md` e `.docx` consistentes ou informe na proposta qual delas ainda precisa ser atualizada.
+6. Para avanços de pesquisa, indique o identificador SRP correspondente, as dependências e o que foi concluído ou permanece em aberto. Atualize o roadmap quando houver mudança de estado.
 
 Não há um processo automatizado de sincronização dos documentos ou validação científica neste repositório. A revisão das alterações é documental e conceitual.
 
@@ -199,6 +255,8 @@ O projeto utiliza dois espaços complementares:
 | --- | --- |
 | [Zenodo](https://zenodo.org/records/22676356) | Publicação acadêmica arquivada, identificada por DOI e usada como referência para citação. |
 | [GitHub](https://github.com/gustavotenshi/STWIN) | Documentação em evolução, manuscrito em Markdown, histórico de alterações, issues e discussão técnica. Pode também reunir futuras figuras, simulações e cálculos. |
+
+O roadmap e as notas de conclusão acompanham a evolução da pesquisa no repositório. A presença desses documentos não implica uma nova versão do artigo arquivado; o badge do manuscrito permanece em `v1.0` até uma atualização formal correspondente.
 
 Para futuras versões do artigo, como `v1.1` ou `v2.0`, o fluxo de publicação proposto é:
 
